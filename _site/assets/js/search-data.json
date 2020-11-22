@@ -1,0 +1,849 @@
+{"0": {
+    "doc": "Transformers",
+    "title": "Transformers",
+    "hpath": "papers.transformers",
+    "content": ". | papers.transformers.day1 | papers.transformers.day2 | papers.transformers.day3 | . ",
+    "url": "http://localhost:4000/notes/11e3fe8a-98b7-4bb7-8fc9-fe1c29354461.html",
+    "relUrl": "/notes/11e3fe8a-98b7-4bb7-8fc9-fe1c29354461.html"
+  },"1": {
+    "doc": "Classification",
+    "title": "Classification",
+    "hpath": "papers.classification",
+    "content": "papers.classification.day1 papers.classification.day2 papers.classification.day3 . ",
+    "url": "http://localhost:4000/notes/1977e2ad-5e1e-4f0e-94a1-b68059392e5e.html",
+    "relUrl": "/notes/1977e2ad-5e1e-4f0e-94a1-b68059392e5e.html"
+  },"2": {
+    "doc": "Day2",
+    "title": "Day2",
+    "hpath": "papers.summarization.day2",
+    "content": " ",
+    "url": "http://localhost:4000/notes/1c302c5d-7da9-406e-8b5e-5b7777daeffc.html",
+    "relUrl": "/notes/1c302c5d-7da9-406e-8b5e-5b7777daeffc.html"
+  },"3": {
+    "doc": "Day2",
+    "title": "Few-Shot Learning for Opinion Summarization",
+    "hpath": "papers.summarization.day2",
+    "content": "Arthur Bražinskas, Mirella Lapata, Ivan Titov . https://github.com/abrazinskas/FewSum https://slideslive.com/38938830 https://www.aclweb.org/anthology/2020.emnlp-main.337 . Few shot learning for summarization of reviews using Transformer LMs . ",
+    "url": "http://localhost:4000/notes/1c302c5d-7da9-406e-8b5e-5b7777daeffc.html#few-shot-learning-for-opinion-summarization",
+    "relUrl": "/notes/1c302c5d-7da9-406e-8b5e-5b7777daeffc.html#few-shot-learning-for-opinion-summarization"
+  },"4": {
+    "doc": "Summarization",
+    "title": "Summarization",
+    "hpath": "papers.summarization",
+    "content": ". | papers.summarization.day1 | papers.summarization.day2 | . ",
+    "url": "http://localhost:4000/notes/21d5cfbc-3752-4c20-b4f6-b13768bdbc0e.html",
+    "relUrl": "/notes/21d5cfbc-3752-4c20-b4f6-b13768bdbc0e.html"
+  },"5": {
+    "doc": "Tutorials",
+    "title": "Tutorials",
+    "hpath": "papers.tutorials",
+    "content": " ",
+    "url": "http://localhost:4000/notes/27e6f1c1-1025-4574-b056-e9e00e4b6ce5.html",
+    "relUrl": "/notes/27e6f1c1-1025-4574-b056-e9e00e4b6ce5.html"
+  },"6": {
+    "doc": "Day1",
+    "title": "Machine translation and multilinguality",
+    "hpath": "papers.mt.day1",
+    "content": " ",
+    "url": "http://localhost:4000/notes/2e97ac15-f73b-4e75-85f6-010d62ae98f4.html#machine-translation-and-multilinguality",
+    "relUrl": "/notes/2e97ac15-f73b-4e75-85f6-010d62ae98f4.html#machine-translation-and-multilinguality"
+  },"7": {
+    "doc": "Day1",
+    "title": "BLEU might be Guilty but References are not Innocent",
+    "hpath": "papers.mt.day1",
+    "content": "https://slideslive.com/38938647 https://www.aclweb.org/anthology/2020.emnlp-main.5 . BLEU score : . | BLEU not good metric for high scores | MT models higher BLEU than human translations ! | High cross-BLEU between predictions of good MT models, similar MT models | What does BLEU measure other than translation quality? | . Reference translations : . | Biased translation by humans : tend to translate word for word (translationese) | Several different translations : Maximizing BLEU =&gt; produce very average monotonic translation | . Idea : ask humans for paraphrases of target sentences . | Humans rate MT models trained with paraphrases much better | BLEU correlates a lot better with quality when using paraphrases | . ",
+    "url": "http://localhost:4000/notes/2e97ac15-f73b-4e75-85f6-010d62ae98f4.html#bleu-might-be-guilty-but-references-are-not-innocent",
+    "relUrl": "/notes/2e97ac15-f73b-4e75-85f6-010d62ae98f4.html#bleu-might-be-guilty-but-references-are-not-innocent"
+  },"8": {
+    "doc": "Day1",
+    "title": "Simulated multiple reference training improves low-resource machine translation",
+    "hpath": "papers.mt.day1",
+    "content": "Huda Khayrallah, Brian Thompson, Matt Post, Philipp Koehn . https://slideslive.com/38938786 https://www.aclweb.org/anthology/2020.emnlp-main.7 . | Lots of different ways of translating sentence . | Think of translations as paraphrases of target sentence . | Idea : Introduce paraphraser, sample from distribution and generate different paraphrases . | Similar to word-level knowledge distillation . | Train using synthetic paraphrase dataset . | Result : 1.2 to 7 BLEU improvements . | Complementary to back-translation . | . ",
+    "url": "http://localhost:4000/notes/2e97ac15-f73b-4e75-85f6-010d62ae98f4.html#simulated-multiple-reference-training-improves-low-resource-machine-translation",
+    "relUrl": "/notes/2e97ac15-f73b-4e75-85f6-010d62ae98f4.html#simulated-multiple-reference-training-improves-low-resource-machine-translation"
+  },"9": {
+    "doc": "Day1",
+    "title": "Automatic Machine Translation Evaluation in Many Languages via Zero-Shot Paraphrasing",
+    "hpath": "papers.mt.day1",
+    "content": "Brian Thompson, Matt Post . https://slideslive.com/38938798 https://www.aclweb.org/anthology/2020.emnlp-main.8 . | Idea : seq2seq paraphraser to score translations | BLEU correlation with quality breaks down for high BLEU scores | Retain meaning of input, fluent but lexically / syntactically unbiased | Multilingual NMT as zero-shot paraphraser e.g. translate English to intermediate language-agnostic representation, translate back to English | Much better correlation with quality than BLEU | . ",
+    "url": "http://localhost:4000/notes/2e97ac15-f73b-4e75-85f6-010d62ae98f4.html#automatic-machine-translation-evaluation-in-many-languages-via-zero-shot-paraphrasing",
+    "relUrl": "/notes/2e97ac15-f73b-4e75-85f6-010d62ae98f4.html#automatic-machine-translation-evaluation-in-many-languages-via-zero-shot-paraphrasing"
+  },"10": {
+    "doc": "Day1",
+    "title": "Unsupervised Quality Estimation for Neural Machine Translation",
+    "hpath": "papers.mt.day1",
+    "content": "Marina Fomicheva, Shuo Sun, Lisa Yankovskaya, Frédéric Blain, Francisco Guzmán, Mark Fishel, Nikolaos Aletras, Vishrav Chaudhary, Lucia Specia . | Goal similar to paper above | No paraphraser, uncertainty quantification approach | . ",
+    "url": "http://localhost:4000/notes/2e97ac15-f73b-4e75-85f6-010d62ae98f4.html#unsupervised-quality-estimation-for-neural-machine-translation",
+    "relUrl": "/notes/2e97ac15-f73b-4e75-85f6-010d62ae98f4.html#unsupervised-quality-estimation-for-neural-machine-translation"
+  },"11": {
+    "doc": "Day1",
+    "title": "Day1",
+    "hpath": "papers.mt.day1",
+    "content": " ",
+    "url": "http://localhost:4000/notes/2e97ac15-f73b-4e75-85f6-010d62ae98f4.html",
+    "relUrl": "/notes/2e97ac15-f73b-4e75-85f6-010d62ae98f4.html"
+  },"12": {
+    "doc": "Day1",
+    "title": "Day1",
+    "hpath": "papers.other.day1",
+    "content": " ",
+    "url": "http://localhost:4000/notes/357e62a6-2f5a-4fb9-b14f-dd71be43ce2c.html",
+    "relUrl": "/notes/357e62a6-2f5a-4fb9-b14f-dd71be43ce2c.html"
+  },"13": {
+    "doc": "Day1",
+    "title": "Reformulating Unsupervised Style Transfer as Paraphrase Generation",
+    "hpath": "papers.other.day1",
+    "content": ". | https://virtual.2020.emnlp.org/paper_main.1581.html | . Idea : Use paraphrasing to go from style A to “neutral” style and then go from “neutral” style to style B using back-translation for both translators Achieves SotA on style transfer . ",
+    "url": "http://localhost:4000/notes/357e62a6-2f5a-4fb9-b14f-dd71be43ce2c.html#reformulating-unsupervised-style-transfer-as-paraphrase-generation",
+    "relUrl": "/notes/357e62a6-2f5a-4fb9-b14f-dd71be43ce2c.html#reformulating-unsupervised-style-transfer-as-paraphrase-generation"
+  },"14": {
+    "doc": "Day3",
+    "title": "Day3",
+    "hpath": "papers.classification.day3",
+    "content": " ",
+    "url": "http://localhost:4000/notes/39c5c37c-995a-46c6-9623-2c3e4facc2df.html",
+    "relUrl": "/notes/39c5c37c-995a-46c6-9623-2c3e4facc2df.html"
+  },"15": {
+    "doc": "Day3",
+    "title": "Text Classification Using Label Names Only: A Language Model Self-Training Approach",
+    "hpath": "papers.classification.day3",
+    "content": "Yu Meng, Yunyi Zhang, Jiaxin Huang, Chenyan Xiong, Heng Ji, Chao Zhang, Jiawei Han . https://slideslive.com/38938946 https://www.aclweb.org/anthology/2020.emnlp-main.724 . Unsupervised learning given category names interesting . | Get list of related words to a label name by using MLM and replacing whenever the label word appears in corpus | Masked category prediction Using MLM and replacing the label word with mask, if more than 20 of the 50 label words are in the top predictions, assign that label to the document Then still using the mask and the rest of the sentence, train classifier to assign this document to the label | Self-training Iteratively use model’s current predictions P to compute a target distribution Q which guides the model and use KL divergence | . ",
+    "url": "http://localhost:4000/notes/39c5c37c-995a-46c6-9623-2c3e4facc2df.html#text-classification-using-label-names-only-a-language-model-self-training-approach",
+    "relUrl": "/notes/39c5c37c-995a-46c6-9623-2c3e4facc2df.html#text-classification-using-label-names-only-a-language-model-self-training-approach"
+  },"16": {
+    "doc": "Day2",
+    "title": "Day2",
+    "hpath": "papers.transformers.day2",
+    "content": " ",
+    "url": "http://localhost:4000/notes/3da29f21-7b4c-4d81-b230-b38455ccbc84.html",
+    "relUrl": "/notes/3da29f21-7b4c-4d81-b230-b38455ccbc84.html"
+  },"17": {
+    "doc": "Day2",
+    "title": "Masking as an Efficient Alternative to Finetuning for Pretrained Language Models",
+    "hpath": "papers.transformers.day2",
+    "content": "Mengjie Zhao, Tao Lin, Fei Mi, Martin Jaggi, Hinrich Schütze . https://slideslive.com/38938867 https://www.aclweb.org/anthology/2020.emnlp-main.174 . Instead of finetuning a pretrained model with added linear layers, we can instead mask. We mask entries of the W matrices in the transformer blocks (W_k, W_v, etc) and train those masks w.r.t output task. Results in comparable performance with finetuning while reducing memory footprint a lot when you have several tasks. Kind of similar to adapters. ",
+    "url": "http://localhost:4000/notes/3da29f21-7b4c-4d81-b230-b38455ccbc84.html#masking-as-an-efficient-alternative-to-finetuning-for-pretrained-language-models",
+    "relUrl": "/notes/3da29f21-7b4c-4d81-b230-b38455ccbc84.html#masking-as-an-efficient-alternative-to-finetuning-for-pretrained-language-models"
+  },"18": {
+    "doc": "Day2",
+    "title": "When BERT Plays the Lottery, All Tickets Are Winning",
+    "hpath": "papers.transformers.day2",
+    "content": "Sai Prasanna, Anna Rogers, Anna Rumshisky . https://slideslive.com/38939071 https://www.aclweb.org/anthology/2020.emnlp-main.259 . Lottery ticket hypothesis : Dense, randomly initialized feedforward networks contain subnetworks (winning tickets) that, when trained in isolation reach a test accuracy comparable to the original network in a similar number of iterations . What about pretrained Transformers? . Questions : Does LTH hold for BERT? Are pruned subnetworks across seeds / tasks? How good are good subnets and how bad are bad ones? . Evaluate on GLUE . Prunings : . | Unstructured (m-pruning) iteratively prune 10% of least magnitude weights so long as model as 90% of full model accuracy (lottery ticket paper) | Prune complete attention heads, MLPs (s-pruning) | . Results : . | m-pruning stable across seeds | s-pruning : unstable | . ",
+    "url": "http://localhost:4000/notes/3da29f21-7b4c-4d81-b230-b38455ccbc84.html#when-bert-plays-the-lottery-all-tickets-are-winning",
+    "relUrl": "/notes/3da29f21-7b4c-4d81-b230-b38455ccbc84.html#when-bert-plays-the-lottery-all-tickets-are-winning"
+  },"19": {
+    "doc": "Day2",
+    "title": "On the weak link between importance and prunability of attention heads",
+    "hpath": "papers.transformers.day2",
+    "content": "Aakriti Budhraja, Madhura Pande, Preksha Nema, Pratyush Kumar, Mitesh M. Khapra . https://slideslive.com/38939353 https://www.aclweb.org/anthology/2020.emnlp-main.260 . gswtranslation . Lots of experiments of pruning heads / layers . ",
+    "url": "http://localhost:4000/notes/3da29f21-7b4c-4d81-b230-b38455ccbc84.html#on-the-weak-link-between-importance-and-prunability-of-attention-heads",
+    "relUrl": "/notes/3da29f21-7b4c-4d81-b230-b38455ccbc84.html#on-the-weak-link-between-importance-and-prunability-of-attention-heads"
+  },"20": {
+    "doc": "Day2",
+    "title": "On Losses for Modern Language Models",
+    "hpath": "papers.transformers.day2",
+    "content": "Stéphane Aroca-Ouellette, Frank Rudzicz . https://slideslive.com/38939128 https://www.aclweb.org/anthology/2020.emnlp-main.403 . Next sentence prediction in BERT has been criticized and dropped in Roberta, XLNet. What is its true effect? . NSP on pretraining : Only useful for non inference based tasks and benefits diminish over time . Test different token level tasks for pretraining . TF and TF-IDF pretraining tasks provide good improvements ASP and Sentence Ordering provide good improvements for inference based tasks.. How to combine tasks? Several ways, summing losses, incrementally adding tasks, alternating between tasks, .. with or without MLM . Results : MLM should always be included, improves clearly but even better with other tasks . Combination of tasks + MLM improves results . Can beat original BERT base using less than 1/4 of original tokens . interesting . Caveats : different re-scaling methods for TF-IDF, choice of distance metrics for QT, FS. ",
+    "url": "http://localhost:4000/notes/3da29f21-7b4c-4d81-b230-b38455ccbc84.html#on-losses-for-modern-language-models",
+    "relUrl": "/notes/3da29f21-7b4c-4d81-b230-b38455ccbc84.html#on-losses-for-modern-language-models"
+  },"21": {
+    "doc": 404,
+    "title": "404",
+    "hpath": null,
+    "content": "Page not found . ",
+    "url": "http://localhost:4000/404.html#404",
+    "relUrl": "/404.html#404"
+  },"22": {
+    "doc": 404,
+    "title": 404,
+    "hpath": null,
+    "content": " ",
+    "url": "http://localhost:4000/404.html",
+    "relUrl": "/404.html"
+  },"23": {
+    "doc": "Dialogue",
+    "title": "Dialogue",
+    "hpath": "papers.dialog",
+    "content": ". | papers.dialog.day1 | papers.dialog.day2 | papers.dialog.day3 | . ",
+    "url": "http://localhost:4000/notes/40fbde60-26fc-4182-b55f-fae3e43b4074.html",
+    "relUrl": "/notes/40fbde60-26fc-4182-b55f-fae3e43b4074.html"
+  },"24": {
+    "doc": "Negative results workshop",
+    "title": "Negative results workshop",
+    "hpath": "papers.negativeresults",
+    "content": " ",
+    "url": "http://localhost:4000/notes/4117ef1d-6d6d-4dbd-8eb5-df99cf907d46.html",
+    "relUrl": "/notes/4117ef1d-6d6d-4dbd-8eb5-df99cf907d46.html"
+  },"25": {
+    "doc": "Negative results workshop",
+    "title": "How Effective is Task-Agnostic Data Augmentation for Pretrained Transformers?",
+    "hpath": "papers.negativeresults",
+    "content": "Shayne Longpre, Yu Wang, Chris DuBois . https://slideslive.com/38940806 https://www.aclweb.org/anthology/2020.findings-emnlp.394 . interesting . Task-agnostic data augmentation seems to not work well for pretrained models. Hypothesis : simple data augmentations are already captured by pretraining task : LSTM benefits more but Roberta does not . What can work : task-specific data augmentations, cases when pretraining domain different from task domain? . Q : Influence of noisy labels? . ",
+    "url": "http://localhost:4000/notes/4117ef1d-6d6d-4dbd-8eb5-df99cf907d46.html#how-effective-is-task-agnostic-data-augmentation-for-pretrained-transformers",
+    "relUrl": "/notes/4117ef1d-6d6d-4dbd-8eb5-df99cf907d46.html#how-effective-is-task-agnostic-data-augmentation-for-pretrained-transformers"
+  },"26": {
+    "doc": "Negative results workshop",
+    "title": "WER we are and WER we think we are",
+    "hpath": "papers.negativeresults",
+    "content": "Piotr Szymański, Piotr Żelasko, Mikolaj Morzy, Adrian Szymczak, Marzena Żyła-Hoppe, Joanna Banaszczak, Lukasz Augustyniak, Jan Mizgajski, Yishay Carmiel . https://slideslive.com/38940634 https://www.aclweb.org/anthology/2020.findings-emnlp.295 . interesting . Reported WER on modern ASR systems are super low, is it really the case? . Use call center data to report WER and compare to academic SOTA . ",
+    "url": "http://localhost:4000/notes/4117ef1d-6d6d-4dbd-8eb5-df99cf907d46.html#wer-we-are-and-wer-we-think-we-are",
+    "relUrl": "/notes/4117ef1d-6d6d-4dbd-8eb5-df99cf907d46.html#wer-we-are-and-wer-we-think-we-are"
+  },"27": {
+    "doc": "Day1",
+    "title": "Day1",
+    "hpath": "papers.dialog.day1",
+    "content": " ",
+    "url": "http://localhost:4000/notes/450266f8-502d-4d30-a104-0cde447ab1f8.html",
+    "relUrl": "/notes/450266f8-502d-4d30-a104-0cde447ab1f8.html"
+  },"28": {
+    "doc": "Day1",
+    "title": "TOD-BERT: Pre-trained Natural Language Understanding for Task-Oriented Dialogue",
+    "hpath": "papers.dialog.day1",
+    "content": "Chien-Sheng Wu, Steven C.H. Hoi, Richard Socher, Caiming Xiong . https://slideslive.com/38938861 https://www.aclweb.org/anthology/2020.emnlp-main.66 . BERT less good with dialogue, could be because conversational text different from writing . Use MLM + Responsive Contrastive Loss (RCL) . RCL is negative sampling to determine whether two pieces of dialogue fit together Take 2 pieces of dialogue and use same encoder to fit them, use in-batch negative training . Special tokens for dialogue capturing such as USR . Downstream tasks : intent recognition, dialogue state tracking, dialogue act prediction, response selection TOD-BERT improves dialogue downstream tasks, especially for few shot scenarios . TOD-BERT available in transformers pretrained models . ",
+    "url": "http://localhost:4000/notes/450266f8-502d-4d30-a104-0cde447ab1f8.html#tod-bert-pre-trained-natural-language-understanding-for-task-oriented-dialogue",
+    "relUrl": "/notes/450266f8-502d-4d30-a104-0cde447ab1f8.html#tod-bert-pre-trained-natural-language-understanding-for-task-oriented-dialogue"
+  },"29": {
+    "doc": "Day2",
+    "title": "Day2",
+    "hpath": "papers.mt.day2",
+    "content": " ",
+    "url": "http://localhost:4000/notes/491a4381-329e-41e7-bb26-c777870a3041.html",
+    "relUrl": "/notes/491a4381-329e-41e7-bb26-c777870a3041.html"
+  },"30": {
+    "doc": "Day2",
+    "title": "Losing Heads in the Lottery: Pruning Transformer Attention in Neural Machine Translation",
+    "hpath": "papers.mt.day2",
+    "content": "Maximiliana Behnke, Kenneth Heafield . https://slideslive.com/38938739 https://www.aclweb.org/anthology/2020.emnlp-main.211 . gswtranslation . Pruning experiments Prune heads early into the training . ",
+    "url": "http://localhost:4000/notes/491a4381-329e-41e7-bb26-c777870a3041.html#losing-heads-in-the-lottery-pruning-transformer-attention-in-neural-machine-translation",
+    "relUrl": "/notes/491a4381-329e-41e7-bb26-c777870a3041.html#losing-heads-in-the-lottery-pruning-transformer-attention-in-neural-machine-translation"
+  },"31": {
+    "doc": "Day2",
+    "title": "Reusing a Pretrained Language Model on Languages with Limited Corpora for Unsupervised NMT",
+    "hpath": "papers.mt.day2",
+    "content": "Alexandra Chronopoulou, Dario Stojanovski, Alexander Fraser . https://slideslive.com/38938785 https://www.aclweb.org/anthology/2020.emnlp-main.214 . UNMT for a high and a low resource language Vocabulary extension method : union of vocabs Use of adapters for efficient finetuning . ",
+    "url": "http://localhost:4000/notes/491a4381-329e-41e7-bb26-c777870a3041.html#reusing-a-pretrained-language-model-on-languages-with-limited-corpora-for-unsupervised-nmt",
+    "relUrl": "/notes/491a4381-329e-41e7-bb26-c777870a3041.html#reusing-a-pretrained-language-model-on-languages-with-limited-corpora-for-unsupervised-nmt"
+  },"32": {
+    "doc": "Day2",
+    "title": "Day2",
+    "hpath": "papers.langgen.day2",
+    "content": " ",
+    "url": "http://localhost:4000/notes/58571320-e5ea-4b81-8f63-4fa33cca7d15.html",
+    "relUrl": "/notes/58571320-e5ea-4b81-8f63-4fa33cca7d15.html"
+  },"33": {
+    "doc": "Day2",
+    "title": "If beam search is the answer, what was the question?",
+    "hpath": "papers.langgen.day2",
+    "content": "Clara Meister, Ryan Cotterell, Tim Vieira . https://slideslive.com/38938891 https://www.aclweb.org/anthology/2020.emnlp-main.170 . Beam search is a heuristic that they prove to be equivalent to minimising surprisal . From cognitive science : humans tend to prefer sentences with low surprisal, where information is evenly spread across sentence . “The family (that) you cook for”, that is preferred because it spreads start of a new clause and content across 2 words . Propose regularizers to enforce uniform information density . ",
+    "url": "http://localhost:4000/notes/58571320-e5ea-4b81-8f63-4fa33cca7d15.html#if-beam-search-is-the-answer-what-was-the-question",
+    "relUrl": "/notes/58571320-e5ea-4b81-8f63-4fa33cca7d15.html#if-beam-search-is-the-answer-what-was-the-question"
+  },"34": {
+    "doc": "Day2",
+    "title": "A* Beam Search",
+    "hpath": "papers.langgen.day2",
+    "content": "Clara Meister, Ryan Cotterell, Tim Vieira . https://slideslive.com/38939414 https://virtual.2020.emnlp.org/paper_TACL.2169.html . Combinatorial explosion : no markov property . Beam search : pruned BFS . Idea : Best first beam search . total score = sum log (p) for p each word probability . All terms are negative, score decreasing . Idea : Expand highest scoring path, regardless of which step it is at . To get same results as beam search, also limit to k for each round. Propose generalization for non-monotonic scoring function . ",
+    "url": "http://localhost:4000/notes/58571320-e5ea-4b81-8f63-4fa33cca7d15.html#a-beam-search",
+    "relUrl": "/notes/58571320-e5ea-4b81-8f63-4fa33cca7d15.html#a-beam-search"
+  },"35": {
+    "doc": "Day2",
+    "title": "Sparse Text Generation",
+    "hpath": "papers.langgen.day2",
+    "content": "Pedro Henrique Martins, Zita Marinho, André F. T. Martins . https://slideslive.com/38938749 https://www.aclweb.org/anthology/2020.emnlp-main.348 . Introduce entmax sampling, more diverse than nucleus sampling but more realistic than softmax sampling . ",
+    "url": "http://localhost:4000/notes/58571320-e5ea-4b81-8f63-4fa33cca7d15.html#sparse-text-generation",
+    "relUrl": "/notes/58571320-e5ea-4b81-8f63-4fa33cca7d15.html#sparse-text-generation"
+  },"36": {
+    "doc": "Day2",
+    "title": "Blank Language Models",
+    "hpath": "papers.langgen.day2",
+    "content": "Tianxiao Shen, Victor Quach, Regina Barzilay, Tommi Jaakkola . https://slideslive.com/38939329 https://www.aclweb.org/anthology/2020.emnlp-main.420 . At training, sample trajectories to get to final sentence At inference, any : beam search, .. Comment : interesting because blanks can be not only one BPE but noun phrase, .. interesting . ",
+    "url": "http://localhost:4000/notes/58571320-e5ea-4b81-8f63-4fa33cca7d15.html#blank-language-models",
+    "relUrl": "/notes/58571320-e5ea-4b81-8f63-4fa33cca7d15.html#blank-language-models"
+  },"37": {
+    "doc": "Day3",
+    "title": "Day3",
+    "hpath": "papers.dialog.day3",
+    "content": " ",
+    "url": "http://localhost:4000/notes/5bdfc9e6-b994-41fd-afad-9feb45f735f2.html",
+    "relUrl": "/notes/5bdfc9e6-b994-41fd-afad-9feb45f735f2.html"
+  },"38": {
+    "doc": "Day3",
+    "title": "Template Guided Text Generation for Task-Oriented Dialogue",
+    "hpath": "papers.dialog.day3",
+    "content": "Mihir Kale, Abhinav Rastogi . https://slideslive.com/38939152 https://www.aclweb.org/anthology/2020.emnlp-main.527 . Idea : use templates for every dialog act-slot . Fill values with API response. Use seq2seq to make the sentence more natural sounding. Generalizes to unseen APIs . interesting . ",
+    "url": "http://localhost:4000/notes/5bdfc9e6-b994-41fd-afad-9feb45f735f2.html#template-guided-text-generation-for-task-oriented-dialogue",
+    "relUrl": "/notes/5bdfc9e6-b994-41fd-afad-9feb45f735f2.html#template-guided-text-generation-for-task-oriented-dialogue"
+  },"39": {
+    "doc": "NLP Applications",
+    "title": "NLP Applications",
+    "hpath": "papers.applications",
+    "content": ". | papers.applications.day1 | . ",
+    "url": "http://localhost:4000/notes/621a796c-bed6-41bb-969f-9016a621e87d.html",
+    "relUrl": "/notes/621a796c-bed6-41bb-969f-9016a621e87d.html"
+  },"40": {
+    "doc": "Interpretability",
+    "title": "Interpretability",
+    "hpath": "papers.interpret",
+    "content": ". | papers.interpret.day2 | . ",
+    "url": "http://localhost:4000/notes/6571e39d-d925-403b-8f7a-cfa2749cb1a3.html",
+    "relUrl": "/notes/6571e39d-d925-403b-8f7a-cfa2749cb1a3.html"
+  },"41": {
+    "doc": "Other",
+    "title": "Other",
+    "hpath": "papers.other",
+    "content": "Papers that don’t fall in any other defined categories . | papers.other.day1 | papers.other.day2 | papers.other.day3 | . ",
+    "url": "http://localhost:4000/notes/67da1849-168f-4915-996d-56a7effff761.html",
+    "relUrl": "/notes/67da1849-168f-4915-996d-56a7effff761.html"
+  },"42": {
+    "doc": "Low Resource Task",
+    "title": "Low resource translation task : German &lt;-&gt; Upper Sorbian",
+    "hpath": "papers.wmt.lowresourcetask",
+    "content": "https://slideslive.com/38939667 https://www.statmt.org/wmt20/pdf/2020.wmt-1.80.pdf . | Start with pretrained De - En translator and take De encoder gswtranslation | . ",
+    "url": "http://localhost:4000/notes/6a95a05d-8cc2-4f23-b59f-dc9c93cde9d2.html#low-resource-translation-task--german---upper-sorbian",
+    "relUrl": "/notes/6a95a05d-8cc2-4f23-b59f-dc9c93cde9d2.html#low-resource-translation-task--german---upper-sorbian"
+  },"43": {
+    "doc": "Low Resource Task",
+    "title": "Unsupervised track",
+    "hpath": "papers.wmt.lowresourcetask",
+    "content": "The LMU Munich System for the WMT 2020 Unsupervised Machine Translation Shared Task . Alexandra Chronopoulou, Dario Stojanovski, Viktor Hangya, Alexander Fraser . https://slideslive.com/38939582 https://www.statmt.org/wmt20/pdf/2020.wmt-1.128.pdf . ",
+    "url": "http://localhost:4000/notes/6a95a05d-8cc2-4f23-b59f-dc9c93cde9d2.html#unsupervised-track",
+    "relUrl": "/notes/6a95a05d-8cc2-4f23-b59f-dc9c93cde9d2.html#unsupervised-track"
+  },"44": {
+    "doc": "Low Resource Task",
+    "title": "Low Resource Task",
+    "hpath": "papers.wmt.lowresourcetask",
+    "content": " ",
+    "url": "http://localhost:4000/notes/6a95a05d-8cc2-4f23-b59f-dc9c93cde9d2.html",
+    "relUrl": "/notes/6a95a05d-8cc2-4f23-b59f-dc9c93cde9d2.html"
+  },"45": {
+    "doc": "Papers",
+    "title": "Papers",
+    "hpath": "papers",
+    "content": "Collections of different tracks, workshops and tutorials from EMNLP 2020 . ",
+    "url": "http://localhost:4000/notes/7070ae65-b6fc-4d6d-933f-e72b95614dc6.html",
+    "relUrl": "/notes/7070ae65-b6fc-4d6d-933f-e72b95614dc6.html"
+  },"46": {
+    "doc": "Day3",
+    "title": "Day3",
+    "hpath": "papers.transformers.day3",
+    "content": " ",
+    "url": "http://localhost:4000/notes/71cc84f8-b271-498e-a001-c6e6d10b7c01.html",
+    "relUrl": "/notes/71cc84f8-b271-498e-a001-c6e6d10b7c01.html"
+  },"47": {
+    "doc": "Day3",
+    "title": "Recall and Learn: Fine-tuning Deep Pretrained Language Models with Less Forgetting",
+    "hpath": "papers.transformers.day3",
+    "content": "Sanyuan Chen, Yutai Hou, Yiming Cui, Wanxiang Che, Ting Liu, Xiangzhan Yu . https://slideslive.com/38938976 https://www.aclweb.org/anthology/2020.emnlp-main.634 . Catastrophic forgetting during fine-tuning on downstream task. They propose an optimizer to avoid this using multitask learning to recall the knowledge from pretraining tasks and objective shifting to gradually shift learning on downstream tasks . https://github.com/Sanyuan-Chen/RecAdam . ",
+    "url": "http://localhost:4000/notes/71cc84f8-b271-498e-a001-c6e6d10b7c01.html#recall-and-learn-fine-tuning-deep-pretrained-language-models-with-less-forgetting",
+    "relUrl": "/notes/71cc84f8-b271-498e-a001-c6e6d10b7c01.html#recall-and-learn-fine-tuning-deep-pretrained-language-models-with-less-forgetting"
+  },"48": {
+    "doc": "Day3",
+    "title": "Structured Pruning of Large Language Models",
+    "hpath": "papers.transformers.day3",
+    "content": "Ziheng Wang, Jeremy Wohlwend, Tao Lei . https://slideslive.com/38939265 https://www.aclweb.org/anthology/2020.emnlp-main.496 . How to do unstructured pruning with speedup? Use factorization : . W = PQ, introduce diagonal mask between P and Q that the network can learn to remove . gswtranslation . ",
+    "url": "http://localhost:4000/notes/71cc84f8-b271-498e-a001-c6e6d10b7c01.html#structured-pruning-of-large-language-models",
+    "relUrl": "/notes/71cc84f8-b271-498e-a001-c6e6d10b7c01.html#structured-pruning-of-large-language-models"
+  },"49": {
+    "doc": "Day3",
+    "title": "BAE: BERT-based Adversarial Examples for Text Classification",
+    "hpath": "papers.transformers.day3",
+    "content": "Siddhant Garg, Goutham Ramakrishnan . https://slideslive.com/38938695 https://www.aclweb.org/anthology/2020.emnlp-main.498 . Can rule based perturbations (synonym, ..) be improved? . Use masking and prediction : . | Replace existing tokens | Add new tokens in between | . Use 2 criteria to select replacements : . | Semantic similarity threshold to keep same meaning as original text | POS-filter to keep same POS tag to keep similar structure | . If after an iteration of above, model prediction changes : success . ",
+    "url": "http://localhost:4000/notes/71cc84f8-b271-498e-a001-c6e6d10b7c01.html#bae-bert-based-adversarial-examples-for-text-classification",
+    "relUrl": "/notes/71cc84f8-b271-498e-a001-c6e6d10b7c01.html#bae-bert-based-adversarial-examples-for-text-classification"
+  },"50": {
+    "doc": "Day3",
+    "title": "oLMpics - On what Language Model Pre-training Captures",
+    "hpath": "papers.transformers.day3",
+    "content": "Alon Talmor, Yanai Elazar, Yoav Goldberg, Jonathan Berant . Check what types of tasks pretrained models can do : . | Compare ages and tell which one is younger : “A 20 year old is younger/older than a 30 year old”. | “A rhinoceros never/often/always/.. has fur” | “A horse and a crow are birds/animals” | Multi-hop reasoning “Out of a 30 year old, 24 YO, 54YO the first/second/third is the oldest” | . In total 8 tasks to check what LMs know. Roberta Large performs better than others . interesting . ",
+    "url": "http://localhost:4000/notes/71cc84f8-b271-498e-a001-c6e6d10b7c01.html#olmpics---on-what-language-model-pre-training-captures",
+    "relUrl": "/notes/71cc84f8-b271-498e-a001-c6e6d10b7c01.html#olmpics---on-what-language-model-pre-training-captures"
+  },"51": {
+    "doc": "Day3",
+    "title": "Which *BERT? A Survey Organizing Contextualized Encoders",
+    "hpath": "papers.transformers.day3",
+    "content": "Patrick Xia, Shijie Wu, Benjamin Van Durme . https://slideslive.com/38939146 https://www.aclweb.org/anthology/2020.emnlp-main.608 . Variations across BERTs and difficulties in comparing them : . | Different pretraining tasks | Efficiency : training, distillation, pruning, quantization. Memory, inference time? Unclear | Single downstream task or multiple? | Data : Quantity, quality, in-domain, source of data? | Interpretability : task probing, input probing, weight inspection. Not reliable methods | . ",
+    "url": "http://localhost:4000/notes/71cc84f8-b271-498e-a001-c6e6d10b7c01.html#which-bert-a-survey-organizing-contextualized-encoders",
+    "relUrl": "/notes/71cc84f8-b271-498e-a001-c6e6d10b7c01.html#which-bert-a-survey-organizing-contextualized-encoders"
+  },"52": {
+    "doc": "Day3",
+    "title": "Exploring and Predicting Transferability across NLP Tasks",
+    "hpath": "papers.transformers.day3",
+    "content": "Tu Vu, Tong Wang, Tsendsuren Munkhdalai, Alessandro Sordoni, Adam Trischler, Andrew Mattarella-Micke, Subhransu Maji, Mohit Iyyer . https://slideslive.com/38939047 https://www.aclweb.org/anthology/2020.emnlp-main.635 . Which tasks could be useful as intermediate tasks before finetuning for target task? . General answer : transfer better than expected . How to know which tasks are compatible? task2vec approach Achille et al. ",
+    "url": "http://localhost:4000/notes/71cc84f8-b271-498e-a001-c6e6d10b7c01.html#exploring-and-predicting-transferability-across-nlp-tasks",
+    "relUrl": "/notes/71cc84f8-b271-498e-a001-c6e6d10b7c01.html#exploring-and-predicting-transferability-across-nlp-tasks"
+  },"53": {
+    "doc": "Day3",
+    "title": "Discriminatively-Tuned Generative Classifiers for Robust Natural Language Inference",
+    "hpath": "papers.transformers.day3",
+    "content": "Xiaoan Ding, Tianyu Liu, Baobao Chang, Zhifang Sui, Kevin Gimpel . https://slideslive.com/38938994 https://www.aclweb.org/anthology/2020.emnlp-main.657 . More robust and sample efficient using generative model . It seems their model performs better for very low amounts of data &lt;1K and for very noisy conditions &gt;30% label noise, but in other cases Roberta is better. Does it mean that robustness comes at a cost of accuracy? . ",
+    "url": "http://localhost:4000/notes/71cc84f8-b271-498e-a001-c6e6d10b7c01.html#discriminatively-tuned-generative-classifiers-for-robust-natural-language-inference",
+    "relUrl": "/notes/71cc84f8-b271-498e-a001-c6e6d10b7c01.html#discriminatively-tuned-generative-classifiers-for-robust-natural-language-inference"
+  },"54": {
+    "doc": "Day3",
+    "title": "On the Sentence Embeddings from Pre-trained Language Models",
+    "hpath": "papers.transformers.day3",
+    "content": "Bohan Li, Hao Zhou, Junxian He, Mingxuan Wang, Yiming Yang, Lei Li . https://slideslive.com/38939378 https://www.aclweb.org/anthology/2020.emnlp-main.733 https://github.com/bohanli/BERT-flow . BERT word embedding averaging perform poorly for sentence semantic similarity tasks if we don’t finetune. Understanding connection between semantic similarity and pre-training : . | Pre-training : | . First observation : Extra term log(p(x)) represents frequency of words : . If embeddings are distributed in different regions due to frequency statistics, induced similarity is not useful anymore, log(p(x)) not constant. Second observation : Low frequency =&gt; sparse embeddings, meaning poorly defined . Propose BERT-flow : invertible mapping from BERT embedding space to Gaussian latent space =&gt; isotropic, no holes . ",
+    "url": "http://localhost:4000/notes/71cc84f8-b271-498e-a001-c6e6d10b7c01.html#on-the-sentence-embeddings-from-pre-trained-language-models",
+    "relUrl": "/notes/71cc84f8-b271-498e-a001-c6e6d10b7c01.html#on-the-sentence-embeddings-from-pre-trained-language-models"
+  },"55": {
+    "doc": "Day2",
+    "title": "Day2",
+    "hpath": "papers.classification.day2",
+    "content": " ",
+    "url": "http://localhost:4000/notes/72bc9559-9ccf-41f9-952f-a031c81f2a20.html",
+    "relUrl": "/notes/72bc9559-9ccf-41f9-952f-a031c81f2a20.html"
+  },"56": {
+    "doc": "Day2",
+    "title": "Be More with Less: Hypergraph Attention Networks for Inductive Text Classification",
+    "hpath": "papers.classification.day2",
+    "content": "Kaize Ding, Jianling Wang, Jundong Li, Dingcheng Li, Huan Liu . https://slideslive.com/38938658 https://www.aclweb.org/anthology/2020.emnlp-main.399 . There exist graph-based text classification methods like TextGCN Learns representations of word nodes and document nodes . Has limitations : . | Expressive power, word interactions are not necessarily pairwise, could be higher order : “eat humble pie” means to admit that one was wrong | Computational consumption huge, needs to be retrained for newly added data | . Idea : Document level hypergraphs 2 types of hyperedges : . | each sentence as hyperedge, all the words in sentence | semantic hyperedge : each topic as hyperedge, top K words under topic distribution Node + edge attention + mean pooling for text classification | . Comparison with CNN, LSTM, fasttext . ",
+    "url": "http://localhost:4000/notes/72bc9559-9ccf-41f9-952f-a031c81f2a20.html#be-more-with-less-hypergraph-attention-networks-for-inductive-text-classification",
+    "relUrl": "/notes/72bc9559-9ccf-41f9-952f-a031c81f2a20.html#be-more-with-less-hypergraph-attention-networks-for-inductive-text-classification"
+  },"57": {
+    "doc": "Day2",
+    "title": "CAT-Gen: Improving Robustness in NLP Models via Controlled Adversarial Text Generation",
+    "hpath": "papers.classification.day2",
+    "content": "Tianlu Wang, Xuezhi Wang, Yao Qin, Ben Packer, Kang Li, Jilin Chen, Alex Beutel, Ed Chi . NLP models have robustness issues, by flipping words it can easily flip prediction . Previous works : . | word substitution by iteratively searching synonyms : lacks diversity | GAN based methods : unrelated to input sentences | . Idea : controlled adversarial text generation with encoder -&gt; z -&gt; decoder schema . Use projection from attributes into z to be able to perturb z and decode new sentences . ",
+    "url": "http://localhost:4000/notes/72bc9559-9ccf-41f9-952f-a031c81f2a20.html#cat-gen-improving-robustness-in-nlp-models-via-controlled-adversarial-text-generation",
+    "relUrl": "/notes/72bc9559-9ccf-41f9-952f-a031c81f2a20.html#cat-gen-improving-robustness-in-nlp-models-via-controlled-adversarial-text-generation"
+  },"58": {
+    "doc": "Day1",
+    "title": "Day1",
+    "hpath": "papers.applications.day1",
+    "content": " ",
+    "url": "http://localhost:4000/notes/8129589b-ebd7-41fb-91e0-c7866143ea00.html",
+    "relUrl": "/notes/8129589b-ebd7-41fb-91e0-c7866143ea00.html"
+  },"59": {
+    "doc": "Day1",
+    "title": "Data Weighted Training Strategies for Grammatical Error Correction",
+    "hpath": "papers.applications.day1",
+    "content": "Jared Lichtarge, Chris Alberti, Shankar Kumar . https://slideslive.com/38939401 https://arxiv.org/abs/2008.02976 . | Grammatical error correction a “translation” task | Problem : data contains a lot of low quality “grammatical error” corrections like in wiki revision history which could be complete fixes | Delta-perplexity : Difference between perplexity given by pretrained model and finetuned model If perplexity of an example goes down after finetuning, data point must be similar to pretraining data, if it goes up, must be dissimilar | Apply quality filtering during training by using these delta-perplexity quality scores : . | Throw away bad data | Weigh by quality | Above + curriculum interesting | . | . ",
+    "url": "http://localhost:4000/notes/8129589b-ebd7-41fb-91e0-c7866143ea00.html#data-weighted-training-strategies-for-grammatical-error-correction",
+    "relUrl": "/notes/8129589b-ebd7-41fb-91e0-c7866143ea00.html#data-weighted-training-strategies-for-grammatical-error-correction"
+  },"60": {
+    "doc": "Day1",
+    "title": "FIND: Human-in-the-Loop Debugging Deep Text Classifiers",
+    "hpath": "papers.applications.day1",
+    "content": "Piyawat Lertvittayakumjorn, Lucia Specia, Francesca Toni . https://slideslive.com/38939233 https://www.aclweb.org/anthology/2020.emnlp-main.24 . | Biases in the data might lead to bad predictions or not perform well with new data . | If we don’t know problems in advance we can use post-hoc human in the loop approach . | Idea : propose post-hoc human in the loop approach to use feature debugging / disabling . | . | Understand patterns that each learned feature detects | Disable irrelevant features | Fine-tune the model again | . | CNNs : Show word cloud to the labeler to show which n-grams were chosen by max-pooling of CNN Human rates : is this feature useful for the classification task? | . ",
+    "url": "http://localhost:4000/notes/8129589b-ebd7-41fb-91e0-c7866143ea00.html#find-human-in-the-loop-debugging-deep-text-classifiers",
+    "relUrl": "/notes/8129589b-ebd7-41fb-91e0-c7866143ea00.html#find-human-in-the-loop-debugging-deep-text-classifiers"
+  },"61": {
+    "doc": "Day1",
+    "title": "Conversational Document Prediction to Assist Customer Care Agents",
+    "hpath": "papers.applications.day1",
+    "content": "Jatin Ganhotra, Haggai Roitman, Doron Cohen, Nathaniel Mills, Chulaka Gunasekara, Yosi Mass, Sachindra Joshi, Luis Lastras, David Konopnicki . https://slideslive.com/38938896 https://www.aclweb.org/anthology/2020.emnlp-main.25 . | Idea : Suggest URLs to customers to solve their problems from chat conversations with agents | . Methods : Information retrieval : BM25 NNs : ESIM, BERT, SBERT . Hybrid approach : IR model for initial ranking, top 20 documents and then use ESIM model to speed up Significant decrease in performance by using only BERT, better using IR + ESIM and faster interesting . ",
+    "url": "http://localhost:4000/notes/8129589b-ebd7-41fb-91e0-c7866143ea00.html#conversational-document-prediction-to-assist-customer-care-agents",
+    "relUrl": "/notes/8129589b-ebd7-41fb-91e0-c7866143ea00.html#conversational-document-prediction-to-assist-customer-care-agents"
+  },"62": {
+    "doc": "Interesting",
+    "title": "Interesting",
+    "hpath": "interesting",
+    "content": "Papers marked with contain interesting ideas in my opinion. Additionally, the two tutorials papers.tutorials.highperformancenlp and papers.tutorials.interpretability were some of the highlights of EMNLP in my opinion due to their very high quality and interesting content. ",
+    "url": "http://localhost:4000/notes/8c716ab6-e253-4b05-8167-ad399382adbb.html",
+    "relUrl": "/notes/8c716ab6-e253-4b05-8167-ad399382adbb.html"
+  },"63": {
+    "doc": "Workshop on Noisy User-Generated Text",
+    "title": "W-NUT Workshop on Noisy User-Generated Text",
+    "hpath": "papers.wnut",
+    "content": " ",
+    "url": "http://localhost:4000/notes/8d1a05b3-9eea-41b3-97cf-00a5fa7a9d55.html#w-nut-workshop-on-noisy-user-generated-text",
+    "relUrl": "/notes/8d1a05b3-9eea-41b3-97cf-00a5fa7a9d55.html#w-nut-workshop-on-noisy-user-generated-text"
+  },"64": {
+    "doc": "Workshop on Noisy User-Generated Text",
+    "title": "Truecasing German user-generated conversational text",
+    "hpath": "papers.wnut",
+    "content": "Yulia Grishina, Thomas Gueudre, Ralf Winkler . https://www.aclweb.org/anthology/2020.wnut-1.19 . interesting . Abstract: True-casing, the task of restoring proper case to (generally) lower case input, is important in downstream tasks and for screen display. In this paper, we investigate truecasing as an in- trinsic task and present several experiments on noisy user queries to a voice-controlled dia- log system. In particular, we compare a rule- based, an n-gram language model (LM) and a recurrent neural network (RNN) approaches, evaluating the results on a German Q&amp;A cor- pus and reporting accuracy for different case categories. We show that while RNNs reach higher accuracy especially on large datasets, character n-gram models with interpolation are still competitive, in particular on mixed- case words where their fall-back mechanisms come into play. ",
+    "url": "http://localhost:4000/notes/8d1a05b3-9eea-41b3-97cf-00a5fa7a9d55.html#truecasing-german-user-generated-conversational-text",
+    "relUrl": "/notes/8d1a05b3-9eea-41b3-97cf-00a5fa7a9d55.html#truecasing-german-user-generated-conversational-text"
+  },"65": {
+    "doc": "Workshop on Noisy User-Generated Text",
+    "title": "May I Ask Who’s Calling? Named Entity Recognition on Call Center Transcripts for Privacy Law Compliance",
+    "hpath": "papers.wnut",
+    "content": "Micaela Kaplan . NER for anonymization in call center calls (names, emails, numbers) . https://www.aclweb.org/anthology/2020.wnut-1.1 . interesting . ",
+    "url": "http://localhost:4000/notes/8d1a05b3-9eea-41b3-97cf-00a5fa7a9d55.html#may-i-ask-whos-calling-named-entity-recognition-on-call-center-transcripts-for-privacy-law-compliance",
+    "relUrl": "/notes/8d1a05b3-9eea-41b3-97cf-00a5fa7a9d55.html#may-i-ask-whos-calling-named-entity-recognition-on-call-center-transcripts-for-privacy-law-compliance"
+  },"66": {
+    "doc": "Workshop on Noisy User-Generated Text",
+    "title": "Workshop on Noisy User-Generated Text",
+    "hpath": "papers.wnut",
+    "content": " ",
+    "url": "http://localhost:4000/notes/8d1a05b3-9eea-41b3-97cf-00a5fa7a9d55.html",
+    "relUrl": "/notes/8d1a05b3-9eea-41b3-97cf-00a5fa7a9d55.html"
+  },"67": {
+    "doc": "Day1",
+    "title": "Day1",
+    "hpath": "papers.transformers.day1",
+    "content": " ",
+    "url": "http://localhost:4000/notes/948323c7-b75c-42e8-bb35-849463e56ea3.html",
+    "relUrl": "/notes/948323c7-b75c-42e8-bb35-849463e56ea3.html"
+  },"68": {
+    "doc": "Day1",
+    "title": "Pre-Training Transformers as Energy-Based Cloze Models",
+    "hpath": "papers.transformers.day1",
+    "content": "Kevin Clark, Minh-Thang Luong, Quoc Le, Christopher D. Manning . https://slideslive.com/38939095 https://www.aclweb.org/anthology/2020.emnlp-main.20 . | Autoregressive LMs good for scoring sentences : P(a) _ P(b | a) _ … but no easy way to do this with BERT due to masking task | . | Idea : Electric model : predict all words simultaneously without masking . | Energy-based model, assigns a scalar score to each word. Does not use softmax but outputs unnormalized scores which avoids expensive renormalization . | Use noise contrastive estimation : turn generation task into binary classification task, model has to distinguish between in-distribution tokens / fake tokens . | Better than Electra, replace generator by noise distribution and discriminator by binary classifier . | ELECTRA is “negative sampling” version of BERT . | Requires O(1) transformer passes to do scoring / reranking interesting | . ",
+    "url": "http://localhost:4000/notes/948323c7-b75c-42e8-bb35-849463e56ea3.html#pre-training-transformers-as-energy-based-cloze-models",
+    "relUrl": "/notes/948323c7-b75c-42e8-bb35-849463e56ea3.html#pre-training-transformers-as-energy-based-cloze-models"
+  },"69": {
+    "doc": "Day1",
+    "title": "Calibration of Pre-trained Transformers",
+    "hpath": "papers.transformers.day1",
+    "content": "Shrey Desai, Greg Durrett . https://slideslive.com/38939157 https://www.aclweb.org/anthology/2020.emnlp-main.21 . | BERT models can make mistakes with output probabilities =&gt; Need for posterior calibration . | Use Expected Calibration Error as metric but wish for high accuracy as well . | Tasks : NLI, Paraphrase Detection, Commonsense Reasoning . | In-domain : Transformer-based models generally more accurate, better calibrated . | Out-of-domain : Robust out of domain accuracy but still quite high calibration errors . | How to fix calibration errors? . | Temperature scaling good for in-domain while label smoothing good for out-of-domain interesting . | . ",
+    "url": "http://localhost:4000/notes/948323c7-b75c-42e8-bb35-849463e56ea3.html#calibration-of-pre-trained-transformers",
+    "relUrl": "/notes/948323c7-b75c-42e8-bb35-849463e56ea3.html#calibration-of-pre-trained-transformers"
+  },"70": {
+    "doc": "Day1",
+    "title": "ETC: Encoding Long and Structured Inputs in Transformers",
+    "hpath": "papers.transformers.day1",
+    "content": "Joshua Ainslie, Santiago Ontanon, Chris Alberti, Vaclav Cvicek, Zachary Fisher, Philip Pham, Anirudh Ravula, Sumit Sanghai, Qifan Wang, Li Yang . https://slideslive.com/38938951 https://www.aclweb.org/anthology/2020.emnlp-main.19 . | Attention doesn’t scale . | Global-local attention : . | Global attends to all tokens | Local attends locally | Similar to Longformer | . | Relative position representations : encode arbitrary structure relations between input tokens . | Contrastive Predictive Coding : Pre-training objective to use global summary tokens . | ETC : Have global tokens that can attend everywhere and local ones with sliding window : linear complexity in length . | Relative position representations : Encourage global tokens to serve as sentence summaries . | CPC : In addition to MLM : also predict sentences using global tokens, try to predict sentence embeddings . | SotA long answer performance on several datasets interesting | . ",
+    "url": "http://localhost:4000/notes/948323c7-b75c-42e8-bb35-849463e56ea3.html#etc-encoding-long-and-structured-inputs-in-transformers",
+    "relUrl": "/notes/948323c7-b75c-42e8-bb35-849463e56ea3.html#etc-encoding-long-and-structured-inputs-in-transformers"
+  },"71": {
+    "doc": "Day1",
+    "title": "TernaryBERT",
+    "hpath": "papers.transformers.day1",
+    "content": "interesting . 15x smaller size with comparable accuracy to BERT . Tiny model with distillation + ternary quantization (-1, 0, 1) with good results . https://virtual.2020.emnlp.org/paper_main.2783.html . ",
+    "url": "http://localhost:4000/notes/948323c7-b75c-42e8-bb35-849463e56ea3.html#ternarybert",
+    "relUrl": "/notes/948323c7-b75c-42e8-bb35-849463e56ea3.html#ternarybert"
+  },"72": {
+    "doc": "Day1",
+    "title": "Repulsive Attention: Rethinking Multi-head Attention as Bayesian Inference",
+    "hpath": "papers.transformers.day1",
+    "content": "Bang An, Jie Lyu, Zhenyi Wang, Chunyuan Li, Changwei Hu, Fei Tan, Ruiyi Zhang, Yifan Hu, Changyou Chen . https://virtual.2020.emnlp.org/paper_main.903.html . Cast multi-head attention to bayesian framework Apply repulsive forces to heads such that they capture different effects. ",
+    "url": "http://localhost:4000/notes/948323c7-b75c-42e8-bb35-849463e56ea3.html#repulsive-attention-rethinking-multi-head-attention-as-bayesian-inference",
+    "relUrl": "/notes/948323c7-b75c-42e8-bb35-849463e56ea3.html#repulsive-attention-rethinking-multi-head-attention-as-bayesian-inference"
+  },"73": {
+    "doc": "Day1",
+    "title": "Self-Supervised Meta-Learning for Few-Shot Natural Language Classification Tasks",
+    "hpath": "papers.transformers.day1",
+    "content": "Trapit Bansal, Rishikesh Jha, Tsendsuren Munkhdalai, Andrew McCallum . https://virtual.2020.emnlp.org/paper_main.2793.html . Can we already optimize for future finetuning during pretraining? Metalearning, distribution over tasks . Improvements for few shot learning, even for small LM . Variation of MLM : Always hide the same k words =&gt; classification among the k classes interesting . ",
+    "url": "http://localhost:4000/notes/948323c7-b75c-42e8-bb35-849463e56ea3.html#self-supervised-meta-learning-for-few-shot-natural-language-classification-tasks",
+    "relUrl": "/notes/948323c7-b75c-42e8-bb35-849463e56ea3.html#self-supervised-meta-learning-for-few-shot-natural-language-classification-tasks"
+  },"74": {
+    "doc": "Day3",
+    "title": "Day3",
+    "hpath": "papers.other.day3",
+    "content": " ",
+    "url": "http://localhost:4000/notes/972ac840-7000-4a47-aa46-2773e8c3ef60.html",
+    "relUrl": "/notes/972ac840-7000-4a47-aa46-2773e8c3ef60.html"
+  },"75": {
+    "doc": "Day3",
+    "title": "Scalable Zero-shot Entity Linking with Dense Entity Retrieval",
+    "hpath": "papers.other.day3",
+    "content": "Ledell Wu, Fabio Petroni, Martin Josifoski, Sebastian Riedel, Luke Zettlemoyer . https://slideslive.com/38939238 https://www.aclweb.org/anthology/2020.emnlp-main.519 . Abstract : This paper introduces a conceptually simple, scalable, and highly effective BERT-based entity linking model, along with an extensive evaluation of its accuracy-speed trade-off. We present a two-stage zero-shot linking algorithm, where each entity is defined only by a short textual description. The first stage does retrieval in a dense space defined by a bi-encoder that independently embeds the mention context and the entity descriptions. Each candidate is then re-ranked with a cross-encoder, that concatenates the mention and entity text. Experiments demonstrate that this approach is state of the art on recent zero-shot benchmarks (6 point absolute gains) and also on more established non-zero-shot evaluations (e.g. TACKBP-2010), despite its relative simplicity (e.g. no explicit entity embeddings or manually engineered mention tables). We also show that bi-encoder linking is very fast with nearest neighbor search (e.g. linking with 5.9 million candidates in 2 milliseconds), and that much of the accuracy gain from the more expensive cross-encoder can be transferred to the bi-encoder via knowledge distillation. Our code and models are available at https://github.com/facebookresearch/BLINK . ",
+    "url": "http://localhost:4000/notes/972ac840-7000-4a47-aa46-2773e8c3ef60.html#scalable-zero-shot-entity-linking-with-dense-entity-retrieval",
+    "relUrl": "/notes/972ac840-7000-4a47-aa46-2773e8c3ef60.html#scalable-zero-shot-entity-linking-with-dense-entity-retrieval"
+  },"76": {
+    "doc": "Day3",
+    "title": "Topic Modeling in Embedding Spaces",
+    "hpath": "papers.other.day3",
+    "content": "Adji Bousso Dieng, Francisco Ruiz, David Blei . https://slideslive.com/38939405 https://virtual.2020.emnlp.org/paper_TACL.2093.html https://arxiv.org/abs/1907.04907 https://github.com/adjidieng/ETM . Like LDA but . | no need to trim stop words, rare words | learns interpretable word embeddings in addition to topics | no need to run optimization for evaluation | generalization to unseen words | . ",
+    "url": "http://localhost:4000/notes/972ac840-7000-4a47-aa46-2773e8c3ef60.html#topic-modeling-in-embedding-spaces",
+    "relUrl": "/notes/972ac840-7000-4a47-aa46-2773e8c3ef60.html#topic-modeling-in-embedding-spaces"
+  },"77": {
+    "doc": "Day3",
+    "title": "Deconstructing word embedding algorithms",
+    "hpath": "papers.other.day3",
+    "content": "Kian Kenyon-Dean, Edward Newell, Jackie Chi Kit Cheung . https://slideslive.com/38938885 https://www.aclweb.org/anthology/2020.emnlp-main.681 . How come word2vec, fasttext, glove etc were so successful? . interesting . They all try to find vectors such that i.j ~=PMI(i,j) where PMI is pointwise mutual information . ",
+    "url": "http://localhost:4000/notes/972ac840-7000-4a47-aa46-2773e8c3ef60.html#deconstructing-word-embedding-algorithms",
+    "relUrl": "/notes/972ac840-7000-4a47-aa46-2773e8c3ef60.html#deconstructing-word-embedding-algorithms"
+  },"78": {
+    "doc": "Day2",
+    "title": "Day2",
+    "hpath": "papers.other.day2",
+    "content": " ",
+    "url": "http://localhost:4000/notes/a3ae46a6-b224-4adf-a7aa-d6017e2206fc.html",
+    "relUrl": "/notes/a3ae46a6-b224-4adf-a7aa-d6017e2206fc.html"
+  },"79": {
+    "doc": "Day2",
+    "title": "Word Rotator’s Distance",
+    "hpath": "papers.other.day2",
+    "content": "Sho Yokoi, Ryo Takahashi, Reina Akama, Jun Suzuki, Kentaro Inui . https://slideslive.com/38939100 https://www.aclweb.org/anthology/2020.emnlp-main.236 . Word Rotators distance . Take word embeddings projections on hypersphere, compute rotations : transport cost Weight of each word = norm of each word vector . Norm of word vectors good proxy for importance of each word . Better results than EMD . ",
+    "url": "http://localhost:4000/notes/a3ae46a6-b224-4adf-a7aa-d6017e2206fc.html#word-rotators-distance",
+    "relUrl": "/notes/a3ae46a6-b224-4adf-a7aa-d6017e2206fc.html#word-rotators-distance"
+  },"80": {
+    "doc": "Day2",
+    "title": "The Multilingual Amazon Reviews Corpus",
+    "hpath": "papers.other.day2",
+    "content": "Phillip Keung, Yichao Lu, György Szarvas, Noah A. Smith . https://slideslive.com/38938794 https://www.aclweb.org/anthology/2020.emnlp-main.369 https://registry.opendata.aws/amazon-reviews-ml/ . Multilingual Amazon text classification corpus (English, German, French, ..) . ",
+    "url": "http://localhost:4000/notes/a3ae46a6-b224-4adf-a7aa-d6017e2206fc.html#the-multilingual-amazon-reviews-corpus",
+    "relUrl": "/notes/a3ae46a6-b224-4adf-a7aa-d6017e2206fc.html#the-multilingual-amazon-reviews-corpus"
+  },"81": {
+    "doc": "Day2",
+    "title": "Zero-Shot Crosslingual Sentence Simplification",
+    "hpath": "papers.other.day2",
+    "content": "Jonathan Mallinson, Rico Sennrich, Mirella Lapata . Abstract: entence simplification aims to make sentences easier to read and understand. Recent approaches have shown promising results with encoder-decoder models trained on large amounts of parallel data which often only exists in English. We propose a zero-shot modeling framework which transfers simplification knowledge from English to another language (for which no parallel simplification corpus exists) while generalizing across languages and tasks. A shared transformer encoder constructs language-agnostic representations, with a combination of task-specific encoder layers added on top (e.g., for translation and simplification). Empirical results using both human and automatic metrics show that our approach produces better simplifications than unsupervised and pivot-based methods. https://slideslive.com/38938888 https://www.aclweb.org/anthology/2020.emnlp-main.415 . ",
+    "url": "http://localhost:4000/notes/a3ae46a6-b224-4adf-a7aa-d6017e2206fc.html#zero-shot-crosslingual-sentence-simplification",
+    "relUrl": "/notes/a3ae46a6-b224-4adf-a7aa-d6017e2206fc.html#zero-shot-crosslingual-sentence-simplification"
+  },"82": {
+    "doc": "Blackbox NLP Workshop",
+    "title": "Blackbox NLP workshop",
+    "hpath": "papers.blackboxnlp",
+    "content": " ",
+    "url": "http://localhost:4000/notes/af4d40fb-5e41-460e-ae29-8a273b68c820.html#blackbox-nlp-workshop",
+    "relUrl": "/notes/af4d40fb-5e41-460e-ae29-8a273b68c820.html#blackbox-nlp-workshop"
+  },"83": {
+    "doc": "Blackbox NLP Workshop",
+    "title": "On the Sub-layer Functionalities of Transformer Decoder",
+    "hpath": "papers.blackboxnlp",
+    "content": "Yilin Yang, Longyue Wang, Shuming Shi, Prasad Tadepalli, Stefan Lee, Zhaopeng Tu . https://slideslive.com/38940141 https://www.aclweb.org/anthology/2020.findings-emnlp.432 . gswtranslation . BERT : lower layers capture syntactic information, higher level ones semantic information . Decoder analysis in NMT : sub-layer split . Probing decoder : takes IFM / SEM / TEM representation and force decoding of source or target tokens, compute perplexity. . | Removing TEM : essential for word alignment, don’t remove . | First FF layer in IFM and second FF layer contain same roughly same information . | . Remove feed-forward and add-norm . ",
+    "url": "http://localhost:4000/notes/af4d40fb-5e41-460e-ae29-8a273b68c820.html#on-the-sub-layer-functionalities-of-transformer-decoder",
+    "relUrl": "/notes/af4d40fb-5e41-460e-ae29-8a273b68c820.html#on-the-sub-layer-functionalities-of-transformer-decoder"
+  },"84": {
+    "doc": "Blackbox NLP Workshop",
+    "title": "What Happens To BERT Embeddings During Fine-tuning?",
+    "hpath": "papers.blackboxnlp",
+    "content": "Amil Merchant, Elahe Rahimtoroghi, Ellie Pavlick, Ian Tenney . https://slideslive.com/38939763 https://www.aclweb.org/anthology/2020.blackboxnlp-1.4 . Using probing techniques, following conclusions . ",
+    "url": "http://localhost:4000/notes/af4d40fb-5e41-460e-ae29-8a273b68c820.html#what-happens-to-bert-embeddings-during-fine-tuning",
+    "relUrl": "/notes/af4d40fb-5e41-460e-ae29-8a273b68c820.html#what-happens-to-bert-embeddings-during-fine-tuning"
+  },"85": {
+    "doc": "Blackbox NLP Workshop",
+    "title": "Dissecting Lottery Ticket Transformers: Structural and Behavioral Study of Sparse Neural Machine Translation",
+    "hpath": "papers.blackboxnlp",
+    "content": "Rajiv Movva, Jason Zhao . https://slideslive.com/38939765 https://www.aclweb.org/anthology/2020.blackboxnlp-1.19 . Transformers are very prune-able . Here use Iterative magnitude pruning (IMP) with learning rate rewinding, up to 70% sparsity . Different sparsity models : . Explore probe performance for the varying sparsity models : . However, probe architecture matters and may bias results . Conclusions : . ",
+    "url": "http://localhost:4000/notes/af4d40fb-5e41-460e-ae29-8a273b68c820.html#dissecting-lottery-ticket-transformers-structural-and-behavioral-study-of-sparse-neural-machine-translation",
+    "relUrl": "/notes/af4d40fb-5e41-460e-ae29-8a273b68c820.html#dissecting-lottery-ticket-transformers-structural-and-behavioral-study-of-sparse-neural-machine-translation"
+  },"86": {
+    "doc": "Blackbox NLP Workshop",
+    "title": "Blackbox NLP Workshop",
+    "hpath": "papers.blackboxnlp",
+    "content": " ",
+    "url": "http://localhost:4000/notes/af4d40fb-5e41-460e-ae29-8a273b68c820.html",
+    "relUrl": "/notes/af4d40fb-5e41-460e-ae29-8a273b68c820.html"
+  },"87": {
+    "doc": "Keynotes",
+    "title": "Keynotes",
+    "hpath": "keynotes",
+    "content": " ",
+    "url": "http://localhost:4000/notes/afc4c5c6-49d8-4563-857c-5aa0d0ff0e99.html",
+    "relUrl": "/notes/afc4c5c6-49d8-4563-857c-5aa0d0ff0e99.html"
+  },"88": {
+    "doc": "Keynotes",
+    "title": "Information Extraction Through the Years: How Did We Get Here?",
+    "hpath": "keynotes",
+    "content": "Claire Cardie . | Information extraction : Extract and organize information from text | 1991 : answer fixed questions : who what where how? Challenges : Noun-Phrase coreference resolution, event coref resolution Grammars constructed by hand mostly for syntactic POS parsers Top systems 60% precision, 50% recall | 15 next years : Simplification by dividing the task : NER, sequence tagging, classification for relation extraction | Now : E2E NN approaches SoTA : . | NER : Contextualized character-level embeddings | Relation extraction (classification) | Entity + Relation : LSTM, .. | . | . ",
+    "url": "http://localhost:4000/notes/afc4c5c6-49d8-4563-857c-5aa0d0ff0e99.html#information-extraction-through-the-years-how-did-we-get-here",
+    "relUrl": "/notes/afc4c5c6-49d8-4563-857c-5aa0d0ff0e99.html#information-extraction-through-the-years-how-did-we-get-here"
+  },"89": {
+    "doc": "Keynotes",
+    "title": "Importance of intelligibility in ML",
+    "hpath": "keynotes",
+    "content": "Keynote : Rich Caruana . https://virtual.2020.emnlp.org/plenary_session_keynote_by_rich_caruana.html https://github.com/interpretml/interpret . interesting . Explainable Boosting Machines . EBMs are really good for tabular data and perform as well as black box models but are interpretable . Model says asthma leads to lower pneumonia risk : because patients with asthma get to care quicker. Can edit the model to get rid of these strange correlations . Can also be used with NLP using counts of n-grams . Best paper award ACL : https://github.com/marcotcr/checklist . ",
+    "url": "http://localhost:4000/notes/afc4c5c6-49d8-4563-857c-5aa0d0ff0e99.html#importance-of-intelligibility-in-ml",
+    "relUrl": "/notes/afc4c5c6-49d8-4563-857c-5aa0d0ff0e99.html#importance-of-intelligibility-in-ml"
+  },"90": {
+    "doc": "Machine Translation",
+    "title": "Machine Translation",
+    "hpath": "papers.mt",
+    "content": ". | papers.mt.day1 | papers.mt.day2 | . ",
+    "url": "http://localhost:4000/notes/b3810ead-5d53-4ecb-bd9c-a7e243e25ae3.html",
+    "relUrl": "/notes/b3810ead-5d53-4ecb-bd9c-a7e243e25ae3.html"
+  },"91": {
+    "doc": "Language Generation",
+    "title": "Language generation",
+    "hpath": "papers.langgen",
+    "content": ". | papers.langgen.day2 | . ",
+    "url": "http://localhost:4000/notes/b87fe030-dae9-4a87-a76b-5f800841be77.html#language-generation",
+    "relUrl": "/notes/b87fe030-dae9-4a87-a76b-5f800841be77.html#language-generation"
+  },"92": {
+    "doc": "Language Generation",
+    "title": "Language Generation",
+    "hpath": "papers.langgen",
+    "content": " ",
+    "url": "http://localhost:4000/notes/b87fe030-dae9-4a87-a76b-5f800841be77.html",
+    "relUrl": "/notes/b87fe030-dae9-4a87-a76b-5f800841be77.html"
+  },"93": {
+    "doc": "Day2",
+    "title": "Day2",
+    "hpath": "papers.interpret.day2",
+    "content": " ",
+    "url": "http://localhost:4000/notes/c0486dab-c704-49a3-895c-dc14fb8b73a3.html",
+    "relUrl": "/notes/c0486dab-c704-49a3-895c-dc14fb8b73a3.html"
+  },"94": {
+    "doc": "Day2",
+    "title": "Interpretation of NLP models through input marginalization",
+    "hpath": "papers.interpret.day2",
+    "content": "Siwon Kim, Jihun Yi, Eunji Kim, Sungroh Yoon . https://slideslive.com/38938947 https://www.aclweb.org/anthology/2020.emnlp-main.255 . How to explain influence of each word in sentence on classification? . Can replace each word by pad and check its influence on class probability Problem : If we pad in the middle of sentence, the sentence can be out of distribution. Idea : marginalize along the pad, instead of replacing by pad we replace by several words and average with the word probabilities as weights. Use feedforwarding + MLM to compute the marginalization . Marginalize only over likely candidates . Apparent slightly improved interpretability . ",
+    "url": "http://localhost:4000/notes/c0486dab-c704-49a3-895c-dc14fb8b73a3.html#interpretation-of-nlp-models-through-input-marginalization",
+    "relUrl": "/notes/c0486dab-c704-49a3-895c-dc14fb8b73a3.html#interpretation-of-nlp-models-through-input-marginalization"
+  },"95": {
+    "doc": "Day2",
+    "title": "A Diagnostic Study of Explainability Techniques for Text Classification",
+    "hpath": "papers.interpret.day2",
+    "content": "Pepa Atanasova, Jakob Grue Simonsen, Christina Lioma, Isabelle Augenstein . https://slideslive.com/38938813 https://www.aclweb.org/anthology/2020.emnlp-main.263 . Increasing number of explainability techniques, how to choose? . Propose diagnostic properties with metrics to choose : . | Human agreement | Confidence indication : measure if saliency scores can be used to measure model performance | Faithfulness : Masking and observing change in output | Rationale consistency : Does an explainability technique give similar explanations for different models (different seeds) | Dataset consistency : Same as above but for similar datapoints instead of different models | Compute time | . However LIME performs well also on different tasks for transformers . ",
+    "url": "http://localhost:4000/notes/c0486dab-c704-49a3-895c-dc14fb8b73a3.html#a-diagnostic-study-of-explainability-techniques-for-text-classification",
+    "relUrl": "/notes/c0486dab-c704-49a3-895c-dc14fb8b73a3.html#a-diagnostic-study-of-explainability-techniques-for-text-classification"
+  },"96": {
+    "doc": "Day2",
+    "title": "How do Decisions Emerge across Layers in Neural Models? Interpretation with Differentiable Masking",
+    "hpath": "papers.interpret.day2",
+    "content": "Nicola De Cao, Michael Sejr Schlichtkrull, Wilker Aziz, Ivan Titov . Abstract : Attribution methods assess the contribution of inputs to the model prediction. One way to do so is erasure: a subset of inputs is considered irrelevant if it can be removed without affecting the prediction. Though conceptually simple, erasures objective is intractable and approximate search remains expensive with modern deep NLP models. Erasure is also susceptible to the hindsight bias: the fact that an input can be dropped does not mean that the model knows&amp;#39; it can be dropped. The resulting pruning is over-aggressive and does not reflect how the model arrives at the prediction. To deal with these challenges, we introduce Differentiable Masking. DiffMask learns to mask-out subsets of the input while maintaining differentiability. The decision to include or disregard an input token is made with a simple model based on intermediate hidden layers of the analyzed model. First, this makes the approach efficient because we predict rather than search. Second, as with probing classifiers, this reveals what the network knows at the corresponding layers. This lets us not only plot attribution heatmaps but also analyze how decisions are formed across network layers. We use DiffMask to study BERT models on sentiment classification and question answering. interesting . Learn mask on input tokens : optimize for output distribution between masked / unmasked Promote sparsity : L1 on mask Lagrange multipliers . Out of scope metrics : . ",
+    "url": "http://localhost:4000/notes/c0486dab-c704-49a3-895c-dc14fb8b73a3.html#how-do-decisions-emerge-across-layers-in-neural-models-interpretation-with-differentiable-masking",
+    "relUrl": "/notes/c0486dab-c704-49a3-895c-dc14fb8b73a3.html#how-do-decisions-emerge-across-layers-in-neural-models-interpretation-with-differentiable-masking"
+  },"97": {
+    "doc": "Day2",
+    "title": "Learning Variational Word Masks to Improve the Interpretability of Neural Text Classifiers",
+    "hpath": "papers.interpret.day2",
+    "content": "Hanjie Chen, Yangfeng Ji . https://slideslive.com/38939149 https://www.aclweb.org/anthology/2020.emnlp-main.347 . Weakness of previous interpretability models : network architecture can make interpretability bad with previous interpretability tools e.g. LIME . Build interpretable model : Teach model to focus on important words to make predictions . | Automatically learn task-specific important words | Improve interpretability and performance | . VMASK generates mask for each input word right after the initial embedding layer which we freeze Use information bottleneck to keep important predictive information but remove redundant information from input . https://github.com/UVa-NLP/VMASK . ",
+    "url": "http://localhost:4000/notes/c0486dab-c704-49a3-895c-dc14fb8b73a3.html#learning-variational-word-masks-to-improve-the-interpretability-of-neural-text-classifiers",
+    "relUrl": "/notes/c0486dab-c704-49a3-895c-dc14fb8b73a3.html#learning-variational-word-masks-to-improve-the-interpretability-of-neural-text-classifiers"
+  },"98": {
+    "doc": "Day1",
+    "title": "Day1",
+    "hpath": "papers.summarization.day1",
+    "content": " ",
+    "url": "http://localhost:4000/notes/c4a11d84-5ea1-48d6-81be-e7439df2ef55.html",
+    "relUrl": "/notes/c4a11d84-5ea1-48d6-81be-e7439df2ef55.html"
+  },"99": {
+    "doc": "Day1",
+    "title": "What Have We Achieved on Text Summarization?",
+    "hpath": "papers.summarization.day1",
+    "content": "Dandan Huang, Leyang Cui, Sen Yang, Guangsheng Bao, Kun Wang, Jun Xie, Yue Zhang . https://slideslive.com/38938815 https://www.aclweb.org/anthology/2020.emnlp-main.33 . | Multidimensional metric to detect several aspects of summarization like omission of important information, falsities, etc | . Overview of some summarization models : . Top models : . | BART (abstractive) | BertSumExt (ext) | Summa (ext) | Lead-3 (ext) | . interesting . ROUGE is decent for dataset averages but fairly bad for individual datapoints . ",
+    "url": "http://localhost:4000/notes/c4a11d84-5ea1-48d6-81be-e7439df2ef55.html#what-have-we-achieved-on-text-summarization",
+    "relUrl": "/notes/c4a11d84-5ea1-48d6-81be-e7439df2ef55.html#what-have-we-achieved-on-text-summarization"
+  },"100": {
+    "doc": "Workshop on Machine Translation",
+    "title": "Workshop on Machine Translation",
+    "hpath": "papers.wmt",
+    "content": "http://www.statmt.org/wmt20/program.html . | papers.wmt.lowresourcetask | . ",
+    "url": "http://localhost:4000/notes/d3081c7a-2e55-4c60-8440-6d1f03e44481.html",
+    "relUrl": "/notes/d3081c7a-2e55-4c60-8440-6d1f03e44481.html"
+  },"101": {
+    "doc": "High Performance NLP",
+    "title": "High performance NLP tutorial",
+    "hpath": "papers.tutorials.highperformancenlp",
+    "content": "https://slideslive.com/38940826 . Balance between theoretically promising and practically achievable models . | Techniques : . | Distillation | Quantization | Pruning | . | Efficient attention . | Data independent patterns | Data dependent patterns | Alternative attention mechanisms | Recurrence | . | Case studies | Scaling in practice . | Scaling laws of LMs | Parallelism techniques | Methods to reduce memory footprint | Mixture of experts | . | . ",
+    "url": "http://localhost:4000/notes/e39f3c52-6243-44f1-ae28-c4f07fa6cf20.html#high-performance-nlp-tutorial",
+    "relUrl": "/notes/e39f3c52-6243-44f1-ae28-c4f07fa6cf20.html#high-performance-nlp-tutorial"
+  },"102": {
+    "doc": "High Performance NLP",
+    "title": "Fundamentals",
+    "hpath": "papers.tutorials.highperformancenlp",
+    "content": ". ",
+    "url": "http://localhost:4000/notes/e39f3c52-6243-44f1-ae28-c4f07fa6cf20.html#fundamentals",
+    "relUrl": "/notes/e39f3c52-6243-44f1-ae28-c4f07fa6cf20.html#fundamentals"
+  },"103": {
+    "doc": "High Performance NLP",
+    "title": "Core techniques",
+    "hpath": "papers.tutorials.highperformancenlp",
+    "content": "Distillation . Use soft labels to convey uncertainty / nuances to student model . When should distillation happen? Pretraining, finetuning, both? . Pretraining . DistilBERT, distillation at pretraining. Less layers . | Take pretrained BERT base as teacher | Keep its bottom 6 layers only, shallow student | Continue training the 6 layer via knowledge distillation : use teacher probabilities as guide | . MobileBERT, also distil at pretraining. Same number of layers as teacher but smaller embedding size. Encourage at each layer alignment of : . | Feature maps (challenge : different dims), up and down projections to 512 in between dims | Attention maps : want the student to know where to focus attention, minimize KL divergence between attention distributions | . Comparable accuracy on GLUE, 4x smaller, 6x faster than BERT Base . Fine-tuning . Useful when we have large amounts of in-domain task data without gold labels, can use teacher labels . Both . TinyBERT . Quantization . When to quantize? . | Most convenient : post-training, often drop in accuracy | Even if using fine-tuning step after, can be unsatisfactory | . Solution : Quantization-aware training or Simulated quantization . | Forward pass : As if quantized | Backward pass : Normal | . Models that quantize weights and also activations : . | Q8BERT : same forward / backward strategy as above | Q-BERT : Each layer has own quantization, group precision to save on memory | TernaryBERT : papers.transformers.day1 -1, 0 or 1. Distillation + quantization 15x decrease in size 2 bits per parameter, 2 students | . Loss : . | Student full precision diff with quantized student | Distillation loss, cross-entropy studen teacher | MSE distance between hidden layers and attention scores | . Pruning . Not only more efficient, can be seen as tech to improve generalization . Early ideas : prune based on second order derivatives . Why do we need to start with large network and downsize instead of training the small one? . Lottery ticket hypothesis . The larger the network, the more lottery tickets (possible subnetworks) and therefore the larger the chances of finding one that performs well. The smaller model can be trained in isolation. Iterative pruning is efficient, iterate pruning + fine-tuning . In practice : fails on very deep networks where it cannot find a winning ticket . Revisited more stable network : . NMT : . Movement pruning . Apply pruning during fine-tuning to reuse pretrained models . Magnitude pruning doesn’t perform well in transfer learning =&gt; movement pruning . Every parameter is associated with a learned importance score . 95% accuracy of BERT base while keeping 15% of its parameters . Previous methods : unstructured pruning, mostly memory saving since sparse compute poorly supported . Hardware lottery : the methods that are most adapted to current hardware become the popular ones . ",
+    "url": "http://localhost:4000/notes/e39f3c52-6243-44f1-ae28-c4f07fa6cf20.html#core-techniques",
+    "relUrl": "/notes/e39f3c52-6243-44f1-ae28-c4f07fa6cf20.html#core-techniques"
+  },"104": {
+    "doc": "High Performance NLP",
+    "title": "Efficient attention",
+    "hpath": "papers.tutorials.highperformancenlp",
+    "content": "Quadratic bottleneck in length, problem for : . | Long-range dependencies | Character level models | Speech processing | High resolution image processing | . Data independent patterns . Fixed patterns on attention matrix and sparsify . | Blockwise patterns : reduction to being quadratic in block length | Strided patterns : reduction by constant factor | Diagonal patterns : | Random patterns : | Global attention : | Combination of patterns | . Data dependent patterns . | Buckets Reformer : use LSH and look at only items in same bucket during attention Clustering over activation : Routing transformer, clustered attention | Sorting and blocking : Sort and restrict attention to only current block or neighbours : Sinkhorn Transformer | Compression : Attention matrix has been empirically demonstrated to be approximately low rank | . Kernels and alternative attention mechanisms . | Kernels : Simplify attention $\\phi(Q, K) =exp(\\frac{Q^T K}{\\sqrt{d}})$ into decomposable kernel $\\phi(Q)^T \\phi(K)$ If we can do this, no need to pay quadratic price =&gt; linear | . Proposed kernels : Random features . | Performer . | Synthesizers . | . Recurrence . | Transformer-XL : split sequences to different chunks, process them independently. Segment-level recurrence mechanism : no need to backprop through previous segment . | Compressive transformers : . | . How do they compare? . | Benchmark : long range arena | . | Time performance per step . | Memory performance . | Summary . | . ",
+    "url": "http://localhost:4000/notes/e39f3c52-6243-44f1-ae28-c4f07fa6cf20.html#efficient-attention",
+    "relUrl": "/notes/e39f3c52-6243-44f1-ae28-c4f07fa6cf20.html#efficient-attention"
+  },"105": {
+    "doc": "High Performance NLP",
+    "title": "Use cases",
+    "hpath": "papers.tutorials.highperformancenlp",
+    "content": "Language models . | Evolved transformer : Uses neural architecture search to improve structure, same performance, 38% smaller | PRADO : | Lite Transformer Long-Short range attention : long distance by attention, local context by convolution 2.5x reduced computation, 18x smaller, no need for 250 GPU year NAS cost | .. A bunch of others | . Retrieval . Data as integral parts of models, ability to retrieve it during inference . | Sentence-BERT : siamese networks with BERT for better retrieval With classic sentence A [ SEP ] sentence B, would need to reencode the whole dataset at inference -&gt; separate encoders and cosine distance | . Most similar datapoints can be found in sublinear time using Maximum inner product search tools . | Generalization through Memorization : NN LMs Interpolate BERT with k-NN . | REALM : Retrieval-Augmented LM Pretraining Can store knowledge by storing it in network but limited by network size Use dual encoder from above to retrieve data . | . Inference SoTA on Open-QA . Can be better and more performant with retrieval . ",
+    "url": "http://localhost:4000/notes/e39f3c52-6243-44f1-ae28-c4f07fa6cf20.html#use-cases",
+    "relUrl": "/notes/e39f3c52-6243-44f1-ae28-c4f07fa6cf20.html#use-cases"
+  },"106": {
+    "doc": "High Performance NLP",
+    "title": "Scaling in practice",
+    "hpath": "papers.tutorials.highperformancenlp",
+    "content": "Hardware . Scale more important than architecture but attention is better . (Attention size saturation might be due to internet data WebCrawl which has a relatively small attention span) . Fully connected layers consume most of the compute . Theoretical vs experimental perspective : . Argues for not using FLOPS but wall time . Theory vs practice, consider hardware you run on : . Other example : EfficientNet is more efficient in FLOPS but runs slower than other image algorithms . For Tensor cores on GPU : mat mul low utilization of FLOPs . Sparsity might be needing 10x less FLOPs but 5x slower than dense so only 2x speedup . Trade-off but no perf gains . BERT base is too small to utilize full GPU . Mat mul can be more efficient if we use less of the GPU : can increase resources per subcore within SM to speedup . Conclusion . Memory optimization . How to fit models into memory? . | CPU / GPU memory swapping e.g. only have one hot layer, swap to CPU what is not needed | . Benefits for large batch sizes . | Mixed precision training : Multiply output loss by scale to avoid over/underflow BF16 on newer GPUs : no need for loss scaling . | Gradient checkpointing : . | . Trade memory for computations : . pytorch easy to use : torch.utils.checkpoint . | Reversible residual connections Usually, prefer gradient checkpointing . | Gradient accumulation Simulate training of larger batch sizes using small batch sizes . | . Parallelism . | Data parallelism Distribute gradient computations, gather them on all devices and do the update . | Model parallelism Aplit layers across devices Efficient if output of model is small but layers have lots of weights : good for feedforward, bad for attention . | Pipeline parallelism Model as pipeline and pass data to next device when done . | ZeRO parallelism opt . | 3D parallelism All parallelisms combined, can train 1 trillion parameter models with relatively few devices . | . Efficiency optimizations . | Larger batch sizes Enables larger learning rates, speeds up training . | Fused kernels e.g. during Adam : lots of load / store operations =&gt; load all things we need and then compute . | . Mixture of Experts . Very large models that can be scaled efficiently Can be 1000x more efficient than Transformers . MoE layer: Split feedfoward layer into “experts” and select a few, only a few are active. Use gating mechanism to choose the experts. KeepTopK + Softmax, only push through selected experts and add them up . MoE scales very well, 600B parameters (1024 experts), 1000x more efficient than GPT3 . Problem : balancing experts, poor utilization . Over time noise decreases and converges to few experts, needs counterbalancing over time, use weight to capture variation over time : . Simpler version : Scale loss of gate probabilities proportional to how often an expert is picked to rebalance . MoE is difficult : . MoE can be very efficient but can be difficult to get right . ",
+    "url": "http://localhost:4000/notes/e39f3c52-6243-44f1-ae28-c4f07fa6cf20.html#scaling-in-practice",
+    "relUrl": "/notes/e39f3c52-6243-44f1-ae28-c4f07fa6cf20.html#scaling-in-practice"
+  },"107": {
+    "doc": "High Performance NLP",
+    "title": "High Performance NLP",
+    "hpath": "papers.tutorials.highperformancenlp",
+    "content": " ",
+    "url": "http://localhost:4000/notes/e39f3c52-6243-44f1-ae28-c4f07fa6cf20.html",
+    "relUrl": "/notes/e39f3c52-6243-44f1-ae28-c4f07fa6cf20.html"
+  },"108": {
+    "doc": "Day1",
+    "title": "Interpretability and Analysis of Models for NLP",
+    "hpath": "papers.classification.day1",
+    "content": " ",
+    "url": "http://localhost:4000/notes/ef4348a5-1177-4d93-a8e7-018dea2dfa3d.html#interpretability-and-analysis-of-models-for-nlp",
+    "relUrl": "/notes/ef4348a5-1177-4d93-a8e7-018dea2dfa3d.html#interpretability-and-analysis-of-models-for-nlp"
+  },"109": {
+    "doc": "Day1",
+    "title": "Learning Which Features Matter: RoBERTa Acquires a Preference for Linguistic Generalizations (Eventually)",
+    "hpath": "papers.classification.day1",
+    "content": "https://slideslive.com/38939219 https://www.aclweb.org/anthology/2020.emnlp-main.16 . Idea : construct different datasets to probe Roberta’s behaviour in terms of feature preference . | Test whether the models prefer linguistic or surface features . | Linguistic features : verb with “-ing”, does the noun have an adjective, .. | Surface features : Is the first token “the”, length of sentence, .. | Test out of domain generalization . | Result : Surface features are represented well by all models, linguistic features are only captured by models with more pretrained data . | Experiment : Ambiguous training data where model could use either feature : label 1 always starts with “the” and with the verb always in “-ing”, which rule does the model choose on unseen data? . | . | Result : As amount of pretrained data, they start showing preference for linguistic features . | Experiment : Introduce small amount of data contradicting with surface feature but consistent with linguistic generalization to nudge it to the right direction. | Result : This nudges the models towards linguistic generalization . | . interesting . ",
+    "url": "http://localhost:4000/notes/ef4348a5-1177-4d93-a8e7-018dea2dfa3d.html#learning-which-features-matter-roberta-acquires-a-preference-for-linguistic-generalizations-eventually",
+    "relUrl": "/notes/ef4348a5-1177-4d93-a8e7-018dea2dfa3d.html#learning-which-features-matter-roberta-acquires-a-preference-for-linguistic-generalizations-eventually"
+  },"110": {
+    "doc": "Day1",
+    "title": "Day1",
+    "hpath": "papers.classification.day1",
+    "content": " ",
+    "url": "http://localhost:4000/notes/ef4348a5-1177-4d93-a8e7-018dea2dfa3d.html",
+    "relUrl": "/notes/ef4348a5-1177-4d93-a8e7-018dea2dfa3d.html"
+  },"111": {
+    "doc": "Interpretability tutorial",
+    "title": "Interpretability tutorial",
+    "hpath": "papers.tutorials.interpretability",
+    "content": "https://virtual.2020.emnlp.org/tutorial_T1.html (recording available soon) . Interpretation methods : Saliency or removal of fluff until we know what caused the prediction . Look for global decision rules : . Full list : . | First two in ACL 2020 tutorial | No comprehensive resource for baking interpretability into model | . This tutorial focuses on : . | Looking at input features, global decision rules and looking at training data | . ",
+    "url": "http://localhost:4000/notes/f3bc9db2-5cbb-4cdf-9845-af076d2f77f4.html",
+    "relUrl": "/notes/f3bc9db2-5cbb-4cdf-9845-af076d2f77f4.html"
+  },"112": {
+    "doc": "Interpretability tutorial",
+    "title": "Why did my model make this prediction?",
+    "hpath": "papers.tutorials.interpretability",
+    "content": ". | Saliency maps : . | Using gradients | Using perturbations | . | Perturbations as explanations . | Input reduction | Adversarial perturbations | . | . Saliency maps . Relative importance of each token in the input w.r.t prediction . How to do it? . Using gradients . Problems with gradient for saliency maps : . | Very noisy locally | Saturated outputs lead to unintuitive gradients | Discontinuous gradients (thresholding) problematic | . How to mitigate the issues? =&gt; Don’t rely on single gradient calculation . | SmoothGrad | Integrated Gradients | . SmoothGrad : . Integrate the gradients over a path from zero to input : Integrated gradients . | Have to have access to gradients | Not customizable | . Using perturbations . | Works with black-box models | Allows input perturbations to be defined | . Methods : . | Leave one out : Remove token/phrase and look at drop in confidence Problem : Only removing one token . | LIME : . | . Problems : . Linear representations can be limited : double negations . Perturbations as explanations . | Input reduction Remove words that keep prediction the same | . Examples . Problems : . | Adversarial examples in NLP | . Are they as good as explanations? It can detect which is the word(s) responsible for a prediction . Problems: . ",
+    "url": "http://localhost:4000/notes/f3bc9db2-5cbb-4cdf-9845-af076d2f77f4.html#why-did-my-model-make-this-prediction",
+    "relUrl": "/notes/f3bc9db2-5cbb-4cdf-9845-af076d2f77f4.html#why-did-my-model-make-this-prediction"
+  },"113": {
+    "doc": "Interpretability tutorial",
+    "title": "What decision rule led to a prediction?",
+    "hpath": "papers.tutorials.interpretability",
+    "content": "Previously talked about local explanations, what about global explanations? . See patterns in data, decision rules . | Anchors : Anchor is a simple decision rule | . Computing anchors : . | Universal adversarial triggers : Whenever this text is present, triggers a prediction | . Start with “the the the”, backprop gradient of loss, dot product with embedding matrix and take words with highest score . Example : Problems in datasets : nobody was associated a lot with contradiction . Pros / cons of interpretation via decision rules : . | Can identify global bugs in models / datasets | Hard to find broad coverage rules : very specific or non-actionable | . Q : how to constrain search to plausible triggers? A : Can use LM to rate plausibility of triggers . ",
+    "url": "http://localhost:4000/notes/f3bc9db2-5cbb-4cdf-9845-af076d2f77f4.html#what-decision-rule-led-to-a-prediction",
+    "relUrl": "/notes/f3bc9db2-5cbb-4cdf-9845-af076d2f77f4.html#what-decision-rule-led-to-a-prediction"
+  },"114": {
+    "doc": "Interpretability tutorial",
+    "title": "Which training example is responsible for a prediction?",
+    "hpath": "papers.tutorials.interpretability",
+    "content": "Detect wrongly labeled data for example : . Benefits of interpretation via training data : . | We know where did we pick up patterns | Actionable : incorrect labels, biases, annotation artifacts | . More precise : Which examples, if removed, would change the loss a lot? . | What would be the prediction of test set data point x given that we remove z from training set? | . Use “influence functions” : . | Principled approach for estimating influence | Works empirically for many models Problems : | Scales poorly with size of model and training data | Theory only applies to convex setting, can struggle for neural models | . Alternative method : representor point selection . Hasn’t been used much in NLP but interesting research direction . Problems with data influence : . | Influential points can be uninterpretable | Computationally expensive | Often requires approximations that may be invalid | How does it interact with pretrained models? | . ",
+    "url": "http://localhost:4000/notes/f3bc9db2-5cbb-4cdf-9845-af076d2f77f4.html#which-training-example-is-responsible-for-a-prediction",
+    "relUrl": "/notes/f3bc9db2-5cbb-4cdf-9845-af076d2f77f4.html#which-training-example-is-responsible-for-a-prediction"
+  },"115": {
+    "doc": "Interpretability tutorial",
+    "title": "How to implement this?",
+    "hpath": "papers.tutorials.interpretability",
+    "content": "Different access requirements : . | Black box : not much to say . | Need gradients, vanilla gradient implementation : Purple (need to implement yourself) . | . Use hooks : . Get the gradients : . Intepretation method : . | Implementation of integrated gradients : | . List of implementations : . ",
+    "url": "http://localhost:4000/notes/f3bc9db2-5cbb-4cdf-9845-af076d2f77f4.html#how-to-implement-this",
+    "relUrl": "/notes/f3bc9db2-5cbb-4cdf-9845-af076d2f77f4.html#how-to-implement-this"
+  },"116": {
+    "doc": "Interpretability tutorial",
+    "title": "Open problems",
+    "hpath": "papers.tutorials.interpretability",
+    "content": ". | Human studies to determine usefulness of interpretability with debugging models : | . | Human - AI collaboration | . ",
+    "url": "http://localhost:4000/notes/f3bc9db2-5cbb-4cdf-9845-af076d2f77f4.html#open-problems",
+    "relUrl": "/notes/f3bc9db2-5cbb-4cdf-9845-af076d2f77f4.html#open-problems"
+  },"117": {
+    "doc": "Day2",
+    "title": "Day2",
+    "hpath": "papers.dialog.day2",
+    "content": " ",
+    "url": "http://localhost:4000/notes/fcaac294-0f35-4af8-911a-269488faad77.html",
+    "relUrl": "/notes/fcaac294-0f35-4af8-911a-269488faad77.html"
+  },"118": {
+    "doc": "Day2",
+    "title": "Improving Out-of-Scope Detection in Intent Classification by Using Embeddings of the Word Graph Space of the Classes",
+    "hpath": "papers.dialog.day2",
+    "content": "Paulo Cavalin, Victor Henrique Alves Ribeiro, Ana Appel, Claudio Pinhanez . Abstract : This paper explores how intent classification can be improved by representing the class labels not as a discrete set of symbols but as a space where the word graphs associated to each class are mapped using typical graph embedding techniques. The approach, inspired by a previous algorithm used for an inverse dictionary task, allows the classification algorithm to take in account inter-class similarities provided by the repeated occurrence of some words in the training examples of the different classes. The classification is carried out by mapping text embeddings to the word graph embeddings of the classes. Focusing solely on improving the representation of the class label set, we show in experiments conducted in both private and public intent classification datasets, that better detection of out-of-scope examples (OOS) is achieved and, as a consequence, that the overall accuracy of intent classification is also improved. In particular, using the recently-released \\emph{Larson dataset}, an error of about 9.9% has been achieved for OOS detection, beating the previous state-of-the-art result by more than 31 percentage points. https://slideslive.com/38939039 https://www.aclweb.org/anthology/2020.emnlp-main.324 . | Users can challenge the chatbot with out of scope questions | Users do not know capabilities | . Classic OOS detection methods : . | Rejection thresholding | Specific classes (OTHER) | Binary or one-class classification | . Idea : build a word graph : words connected to classes Takes into account inter-class similarities Map text embeddings to word graph embeddings of classes Better OOS achieved . ",
+    "url": "http://localhost:4000/notes/fcaac294-0f35-4af8-911a-269488faad77.html#improving-out-of-scope-detection-in-intent-classification-by-using-embeddings-of-the-word-graph-space-of-the-classes",
+    "relUrl": "/notes/fcaac294-0f35-4af8-911a-269488faad77.html#improving-out-of-scope-detection-in-intent-classification-by-using-embeddings-of-the-word-graph-space-of-the-classes"
+  },"119": {
+    "doc": "Emnlp 2020",
+    "title": "EMNLP 2020",
+    "hpath": "root",
+    "content": "Collection of notes from EMNLP 2020 by Viljami Laurmaa. Check the papers, that’s what you want to see, you should find links to the recorded talks and papers along with my notes. For my highlights, see interesting . ",
+    "url": "http://localhost:4000/#emnlp-2020",
+    "relUrl": "/#emnlp-2020"
+  },"120": {
+    "doc": "Emnlp 2020",
+    "title": "Emnlp 2020",
+    "hpath": "root",
+    "content": " ",
+    "url": "http://localhost:4000/",
+    "relUrl": "/"
+  }
+}
