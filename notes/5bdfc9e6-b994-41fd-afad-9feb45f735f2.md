@@ -20,13 +20,13 @@ Mihir Kale, Abhinav Rastogi
 
 Idea : use templates for every dialog act-slot
 
-![](/assets/images/2020-11-18-13-34-55.png)
+![](emnlp2020-notes/assets/images/2020-11-18-13-34-55.png)
 
 Fill values with API response.
 Use seq2seq to make the sentence more natural sounding.
 
 Generalizes to unseen APIs
 
-![](/assets/images/2020-11-22-13-15-42.png)
+![](emnlp2020-notes/assets/images/2020-11-22-13-15-42.png)
 [interesting](8c716ab6-e253-4b05-8167-ad399382adbb)
 
